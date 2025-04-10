@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gym Registration</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+
+
+  <div class="form-container">
+    <div class="top-right">
+        <a href="index.html" class="home-btn">🏠 Home</a>
+      </div>
+    <h2>Gym Registration Form</h2>
+    <form id="registrationForm">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="number" name="age" placeholder="Age" required min="1" />
+      <textarea name="health" placeholder="Health Problems (if any)"></textarea>
+
+      <label for="membership">Membership Plan</label>
+      <select name="membership" required>
+        <option value="">Select a Plan</option>
+        <option value="5000 - 6 Months">₹5000 - 6 Months</option>
+        <option value="9000 - 1 Year">₹9000 - 1 Year</option>
+        <option value="15000 - 2 Years">₹15000 - 2 Years</option>
+      </select>
+
+      <label for="trainer">Trainer</label>
+      <select name="trainer" required>
+        <option value="">Select Trainer</option>
+        <option value="Amit">Amit</option>
+        <option value="Priya">Priya</option>
+        <option value="Rahul">Rahul</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+</html>
