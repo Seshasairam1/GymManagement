@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit User</title>
+  <link rel="stylesheet" href="edit.css" />
+</head>
+<body>
+  <div class="top-right">
+    <a href="index.html" class="home-btn">🏠 Home</a>
+  </div>
+
+  <div class="container">
+    <h2>Edit Gym Member</h2>
+
+    <input type="email" id="searchEmail" placeholder="Enter email to search" required />
+    <button id="searchBtn">Search</button>
+
+    <form id="editForm" style="display:none; margin-top: 20px;">
+      <input type="hidden" name="id" />
+
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="number" name="age" placeholder="Age" required min="1" />
+      <textarea name="health" placeholder="Health Problems (if any)"></textarea>
+
+      <label for="membership">Membership Plan</label>
+      <select name="membership" required>
+        <option value="">Select a Plan</option>
+        <option value="5000 - 6 Months">₹5000 - 6 Months</option>
+        <option value="9000 - 1 Year">₹9000 - 1 Year</option>
+        <option value="15000 - 2 Years">₹15000 - 2 Years</option>
+      </select>
+
+      <label for="trainer">Trainer</label>
+      <select name="trainer" required>
+        <option value="">Select Trainer</option>
+        <option value="Amit">Amit</option>
+        <option value="Priya">Priya</option>
+        <option value="Rahul">Rahul</option>
+      </select>
+
+      <button type="submit">Update</button>
+    </form>
+  </div>
+
+  <script src="edit.js"></script>
+</body>
+</html>
