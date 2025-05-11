@@ -2,5 +2,6 @@
 
 **contributions**
 
-sesha - worked on crud operations
-swetha - helped in connecting backend and frontend - server.js
+This project was developed as part of my learning experience in full-stack web development. I would like to acknowledge that I took assistance for setting up the initial server.js file, specifically for connecting the backend with the frontend and configuring the Express server and MongoDB connection. The guidance was provided by my friend(Swetha) who helped me understand the backend structure.
+
+All CRUD operations — including the implementation of user registration, viewing users, editing user details, and deleting users — were independently designed and implemented by me. Additionally, form validations, styling, testing, and documentation were completed through my own effort.
